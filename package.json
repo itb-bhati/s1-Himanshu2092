@@ -1,0 +1,25 @@
+{
+  "name": "es6assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babel-build":
+      "babel assignment-transpilers/Babel/src --out-file assignment-transpilers/Babel/build/compiled.js",
+    "babel-typescript-build":
+      "babel assignment-transpilers/Babel-Typescript/src --out-file assignment-transpilers/Babel-Typescript/build/compiled_typescript.js --extensions .ts",
+    "start": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "babel-preset-minify": "^0.5.0",
+    "http-server": "^0.11.1",
+    "typescript": "^3.3.3333"
+  }
+}
