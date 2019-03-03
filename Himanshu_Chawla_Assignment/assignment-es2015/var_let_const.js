@@ -1,7 +1,7 @@
 // var is function scoped
-function test(condition) {
+function test_1(condition) {
   var value = "Himanshu";
-  if (condition) {
+  if (condition === 1) {
     var value = "Chawla";
     console.log(value); // chawla
   }
@@ -10,9 +10,9 @@ function test(condition) {
 }
 
 // let is block scoped
-function test(condition) {
+function test_2(condition) {
   let value = "Himanshu";
-  if (condition) {
+  if (condition === 1) {
     value = "Chawla";
     console.log(value); // Chawla
   }
@@ -21,11 +21,15 @@ function test(condition) {
 }
 
 // const cannot reassigned
-function test(condition) {
+function test_3(condition) {
   const value = "Himanshu";
-  if (condition) {
+  if (condition === 1) {
     value = "Chawla"; // type error
   }
 
   console.log(value); // type error
 }
+
+test_1(1);
+test_2(1);
+test_3(1);
